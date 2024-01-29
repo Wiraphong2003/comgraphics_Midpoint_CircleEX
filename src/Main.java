@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 
 public class Main extends JFrame {
     public Main() {
-        setSize(1000, 1000);
+        setSize(700, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
@@ -14,17 +14,24 @@ public class Main extends JFrame {
     }
 
     public static void main(String[] args) {
-        Main frame = new Main();
+        Main frameE4 = new Main();
+        Main frameE5 = new Main();
+        Main frameE6 = new Main();
+
         // PanelMidpoint panelMidpoint = new PanelMidpoint();
         Ex4 ex4 = new Ex4();
         Ex5 ex5 = new Ex5();
         Ex6 ex6 = new Ex6();
-        // frame.add(panelMidpoint);
-        // frame.add(ex4, BorderLayout.WEST); 
-        // frame.add(ex5, BorderLayout.CENTER);
-        // frame.add(ex6, BorderLayout.EAST);
-        frame.add(ex6);
-        frame.setVisible(true);
+
+        frameE4.add(ex4);
+        frameE4.setVisible(true);
+
+        frameE5.add(ex5);
+        frameE5.setVisible(true);
+
+        frameE6.add(ex6);
+        frameE6.setVisible(true);
+
     }
 }
 
